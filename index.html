@@ -16,6 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/demo-video.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -96,12 +97,14 @@
             </div>
           </div>
           <figure class="project-video">
-            <video controls preload="none" playsinline width="1280" height="720" poster="assets/demo-poster.jpg"
-                   aria-label="Demo-Video: Eine Bestellung im Dialekt wird zum geprüften Auftrag, ein Angriff wird abgewehrt, der Auftrag geht an SAP">
+            <!-- Startet erst, wenn es sichtbar ist (assets/demo-video.js) – vorher lädt nur das Vorschaubild -->
+            <video data-autoplay muted loop playsinline controls preload="none" width="1920" height="1080"
+                   poster="assets/demo-poster.jpg"
+                   aria-label="Demo-Video, 45 Sekunden, ohne Ton: Eine Bestellung im Dialekt wird zum geprüften Auftrag und als Kundenauftrag an SAP übergeben, danach Business Case und Making-of">
               <source src="assets/demo.mp4" type="video/mp4">
               <a href="assets/demo.mp4">Demo-Video herunterladen (MP4)</a>
             </video>
-            <figcaption>Demo-Video · 90 Sekunden, ohne Ton – am besten im Vollbild</figcaption>
+            <figcaption>Demo-Video · 45 Sekunden, ohne Ton</figcaption>
           </figure>
         </article>
 
