@@ -1,0 +1,5 @@
+# Binärdateien nie umwandeln (sonst kann Git unter Windows die Zeilenenden einer PDF verändern)
+*.pdf binary
+*.jpg binary
+*.png binary
+*.webp binary
