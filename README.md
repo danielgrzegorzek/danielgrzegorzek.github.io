@@ -19,5 +19,5 @@ Dienste oder Schriften. Hell und dunkel folgen der Einstellung des Geräts.
 
 Lokal ansehen: `index.html` im Browser öffnen oder `python -m http.server` im Ordner starten.
 
-Arbeitsprobe: [Bräu am Stein](https://braeu-am-stein.streamlit.app) ·
+Arbeitsprobe: [Bräu am Stein](https://braeu-am-stein-ki.streamlit.app) ·
 [Code](https://github.com/danielgrzegorzek/brauerei-ki-auftragserfassung)
