@@ -11,7 +11,7 @@ Dienste oder Schriften. Hell und dunkel folgen der Einstellung des Geräts.
 | `datenschutz.html` | Datenschutzhinweis (Hosting bei GitHub Pages) |
 | `impressum.html` | Entwurf, noch nicht verlinkt |
 | `assets/style.css` | Gestaltung |
-| `assets/screens/` | Screenshot der Arbeitsprobe (WebP) |
+| `assets/demo.mp4`, `assets/demo-poster.jpg` | Demo-Video der Arbeitsprobe (aufgenommen mit `tools/record_demo.py` im App-Repo) und sein Vorschaubild |
 
 **Fotos und Lebenslauf austauschen:** Dateien mit gleichem Namen ersetzen – `assets/portrait.jpg` (quadratisch),
 `assets/abschluss.jpg` (Querformat 4:3) und `assets/lebenslauf.pdf`.
