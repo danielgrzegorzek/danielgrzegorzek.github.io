@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Grzegorzek – SAP, KI und Daten</title>
+  <meta name="description" content="Portfolio von Daniel Grzegorzek, Wirtschaftsinformatiker (B.Sc., Uni Passau): Fallstudie „Bräu am Stein“ – KI-gestützte Auftragserfassung mit Übergabe an SAP S/4HANA.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111413" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danielgrzegorzek.github.io/">
+  <meta property="og:title" content="Daniel Grzegorzek – SAP, KI und Daten">
+  <meta property="og:description" content="Fallstudie „Bräu am Stein“: vom WhatsApp-Chaos zum sauberen Auftrag – KI-gestützte Auftragserfassung mit Übergabe an SAP S/4HANA.">
+  <meta property="og:image" content="https://danielgrzegorzek.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Daniel Grzegorzek – zum Seitenanfang">
+        <span class="brand-mark" aria-hidden="true">DG</span> Daniel Grzegorzek
+      </a>
+      <nav class="site-nav" aria-label="Seitenbereiche">
+        <a href="#fallstudie">Fallstudie</a>
+        <a href="#arbeitsweise">Arbeitsweise</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <!-- 1. Kopf -->
+    <section class="hero" id="top">
+      <div class="container">
+        <img class="portrait" src="assets/portrait.jpg" width="800" height="800" alt="Porträt von Daniel Grzegorzek">
+        <div>
+          <p class="eyebrow">Wirtschaftsinformatik (B.Sc.) · SAP · KI · Daten</p>
+          <h1>Daniel Grzegorzek</h1>
+          <p class="lead">
+            Ich verbinde Geschäftsprozesse, SAP und KI – und suche den Direkteinstieg in
+            <strong>SAP-/ERP-Beratung</strong>, <strong>AI Automation</strong> oder <strong>Data Analytics</strong>.
+            <span>Was ich damit meine, zeigt meine Arbeitsprobe.</span>
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://braeu-am-stein.streamlit.app" target="_blank" rel="noopener">
+              Arbeitsprobe öffnen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="button" href="assets/lebenslauf.pdf" target="_blank" rel="noopener">Lebenslauf (PDF)</a>
+            <!-- TODO LinkedIn: eigene Profil-URL eintragen (auch unten bei „Kontakt“) -->
+            <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="button" href="mailto:danigrzegorzek@gmail.com">E-Mail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Weiche für Recruiter + Highlights -->
+    <section class="section" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Auf einen Blick</p>
+          <h2 id="highlights-title">Was die Arbeitsprobe zeigt</h2>
+        </div>
+
+        <div class="focus-switch" role="group" aria-labelledby="focus-label">
+          <span class="focus-switch-label" id="focus-label">Ich suche für:</span>
+          <div class="segmented">
+            <button type="button" data-focus-button="sap" aria-pressed="false">SAP-Beratung</button>
+            <button type="button" data-focus-button="ki" aria-pressed="false">AI Automation</button>
+            <button type="button" data-focus-button="daten" aria-pressed="false">Data Analytics</button>
+          </div>
+          <p class="focus-hint" aria-live="polite" data-focus-hint>Wählen Sie einen Schwerpunkt – die passenden Highlights rücken nach vorn.</p>
+        </div>
+
+        <ul class="highlights" data-sortable>
+          <li class="card highlight" data-focus="ki">
+            <span class="figure">7 von 7</span>
+            <h3>Gemessen statt geglaubt</h3>
+            <p>Eine Evaluation prüft die KI an sieben Bestellungen – vom ersten Lauf mit 4 von 7 bis 7 von 7, dazu ein Modellvergleich mit vorab festgelegter Regel.</p>
+            <ul class="tags"><li>AI Automation</li></ul>
+          </li>
+          <li class="card highlight" data-focus="sap">
+            <span class="figure">6 → 1</span>
+            <h3>Prozess heute und mit KI</h3>
+            <p>Schwimmbahnen für Ist und Soll: Aus sechs manuellen Schritten mit zwei Medienbrüchen wird ein Prüfschritt.</p>
+            <ul class="tags"><li>SAP-Beratung</li></ul>
+          </li>
+          <li class="card highlight" data-focus="daten">
+            <span class="figure">10.066</span>
+            <h3>Vertriebs-Dashboard</h3>
+            <p>Umsatz, Saison und offenes Pfand aus zwei Jahren simulierter Aufträge – mit berechneter Kernaussage und Tabelle zu jedem Diagramm.</p>
+            <ul class="tags"><li>Data Analytics</li></ul>
+          </li>
+          <li class="card highlight" data-focus="ki">
+            <span class="figure">KI + Code</span>
+            <h3>Die KI versteht, der Code entscheidet</h3>
+            <p>Claude übersetzt Freitext und Dialekt in ein festes Format. Artikel, Preise und Regeln prüft getesteter Code – ein Mensch bestätigt.</p>
+            <ul class="tags"><li>AI Automation</li></ul>
+          </li>
+          <li class="card highlight" data-focus="sap">
+            <span class="figure">S/4HANA</span>
+            <h3>Übergabe als Kundenauftrag</h3>
+            <p>Feld-Mapping auf die Standard-API <code>API_SALES_ORDER_SRV</code> mit Vollständigkeitsprüfung – bewusst ohne Preise und Leergut, die ermittelt SAP selbst.</p>
+            <ul class="tags"><li>SAP-Beratung</li></ul>
+          </li>
+          <li class="card highlight" data-focus="daten sap">
+            <span class="figure">≈ 8.300 €</span>
+            <h3>Business Case aus Daten</h3>
+            <p>3.258 Aufträge pro Jahr aus der Datenbank, gemessene KI-Kosten, vorsichtige Annahmen als Regler: rund 217 Stunden Ersparnis im Jahr.</p>
+            <ul class="tags"><li>Data Analytics</li><li>SAP-Beratung</li></ul>
+          </li>
+          <li class="card highlight" data-focus="ki">
+            <span class="figure">&lt; 1 Cent</span>
+            <h3>Sicher und bezahlbar</h3>
+            <p>Ein Angriff per Prompt-Injection wird sichtbar abgewehrt, ein Kostenschutz begrenzt Aufrufe je Besuch und Tag.</p>
+            <ul class="tags"><li>AI Automation</li></ul>
+          </li>
+          <li class="card highlight" data-focus="sap daten">
+            <span class="figure">13 Prüfungen</span>
+            <h3>Datenmodell wie im ERP</h3>
+            <p>Stamm- und Bewegungsdaten, Aufträge mit Kopf und Positionen, Leergut als einzelne Bewegungen – dazu 13 fachliche Plausibilitätsprüfungen der Daten.</p>
+            <ul class="tags"><li>SAP-Beratung</li><li>Data Analytics</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Fallstudie -->
+    <section class="section" id="fallstudie" aria-labelledby="case-title">
+      <div class="container">
+        <div class="case-intro">
+          <div>
+            <p class="eyebrow">Fallstudie</p>
+            <h2 id="case-title">Bräu am Stein: vom WhatsApp-Chaos zum sauberen Auftrag</h2>
+            <p class="lead">Eine KI-gestützte Auftragserfassung für eine fiktive Familienbrauerei in Niederbayern – von der
+              Bestellung im Dialekt bis zum Kundenauftrag für SAP S/4HANA.</p>
+            <div class="actions">
+              <a class="button primary" href="https://braeu-am-stein.streamlit.app" target="_blank" rel="noopener">Live-App öffnen</a>
+              <a class="button" href="https://github.com/danielgrzegorzek/brauerei-ki-auftragserfassung" target="_blank" rel="noopener">Code auf GitHub</a>
+            </div>
+          </div>
+          <figure class="phone-shot">
+            <img src="assets/screens/live-chat-handy.webp" width="600" height="1298" loading="lazy" decoding="async"
+                 alt="Handy-Ansicht der App: Eine Bestellung im bayerischen Dialekt und die Antwort der Brauerei mit erkanntem Auftrag">
+          </figure>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <h3 class="step-label"><span>01</span>Problem</h3>
+            <div class="step-body">
+              <p>Die Brauerei bekommt rund 5.000 Bestellungen im Jahr per WhatsApp, E-Mail und Telefon – als Freitext, oft im
+                Dialekt: <em>„Mia bräuchadn bis morgn no 3 Fassl Weizn …“</em>. Der Innendienst tippt jede Bestellung ab,
+                ergänzt Fehlendes und rechnet das Pfand. Das kostet Zeit und ist fehleranfällig, besonders in der Hochsaison.</p>
+            </div>
+          </li>
+          <li class="step">
+            <h3 class="step-label"><span>02</span>Vorgehen</h3>
+            <div class="step-body">
+              <p>In sieben Phasen: erst realistische Daten über zwei Jahre mit Saison und Leergut, dann Dashboard und
+                Demo-Modus, früh online – danach echte KI mit Evaluation, Business Case und die Übergabe an SAP. Jede Phase
+                habe ich geprüft und abgenommen, bevor die nächste begann.</p>
+            </div>
+          </li>
+          <li class="step">
+            <h3 class="step-label"><span>03</span>Entscheidungen</h3>
+            <div class="step-body">
+              <ul>
+                <li><strong>Die KI versteht nur</strong> – Artikel, Preise und Regeln stehen in getestetem Code.</li>
+                <li><strong>Ein Mensch bestätigt:</strong> Gespeichert wird erst nach seinem Klick, bei Fehlern gar nicht.</li>
+                <li><strong>Demo-Modus ohne Schlüssel,</strong> damit jeder die App kostenlos ausprobieren kann.</li>
+                <li><strong>Modellwahl mit Messung:</strong> Das günstigere Modell kam auf 6 von 7 – also blieb das genauere.</li>
+                <li><strong>SAP-Übergabe über die Standard-API,</strong> ohne Preise und Leergut – die ermittelt SAP selbst.</li>
+              </ul>
+              <p class="muted">Alle Entscheidungen mit Begründung und verworfener Alternative:
+                <a href="https://github.com/danielgrzegorzek/brauerei-ki-auftragserfassung/blob/main/docs/ENTSCHEIDUNGEN.md" target="_blank" rel="noopener">docs/ENTSCHEIDUNGEN.md</a></p>
+            </div>
+          </li>
+          <li class="step">
+            <h3 class="step-label"><span>04</span>Ergebnis</h3>
+            <div class="step-body">
+              <div class="stats">
+                <div class="card stat"><strong>7 von 7</strong><span>Beispielbestellungen richtig erkannt</span></div>
+                <div class="card stat"><strong>≈ 217 h</strong><span>weniger Tipparbeit pro Jahr, vorsichtig gerechnet</span></div>
+                <div class="card stat"><strong>&lt; 1 Cent</strong><span>KI-Kosten je Auftrag, gemessen</span></div>
+                <div class="card stat"><strong>249</strong><span>automatische Tests</span></div>
+              </div>
+            </div>
+          </li>
+          <li class="step">
+            <h3 class="step-label"><span>05</span>Gelernt</h3>
+            <div class="step-body">
+              <ul>
+                <li><strong>Messen statt glauben:</strong> Die meisten Fehler lagen nicht in der KI, sondern im Code drumherum.</li>
+                <li><strong>Regeln gehören in Code:</strong> nachvollziehbar, testbar und unabhängig vom Modell.</li>
+                <li><strong>„Lokal grün“ heißt nicht „online grün“:</strong> Nach jedem Update prüfe ich die Live-App.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <div class="gallery" data-sortable>
+          <figure>
+            <a href="assets/screens/start.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/start.webp" width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="Startseite der App mit Titel, Knopf für die geführte Tour und drei Kennzahlen">
+            </a>
+            <figcaption>Startseite: in einem Satz, worum es geht – mit Tour in 60 Sekunden.</figcaption>
+          </figure>
+          <figure data-focus="ki">
+            <a href="assets/screens/live-chat.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/live-chat.webp" width="1600" height="1475" loading="lazy" decoding="async"
+                   alt="Live-Chat links, rechts der entstehende Auftrag mit Kunde, Positionen, Prüfung, Pfand und Summe">
+            </a>
+            <figcaption>Live-Chat: Aus der Dialekt-Nachricht entsteht Schritt für Schritt ein geprüfter Auftrag.</figcaption>
+          </figure>
+          <figure data-focus="sap">
+            <a href="assets/screens/prozess.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/prozess.webp" width="1600" height="1075" loading="lazy" decoding="async"
+                   alt="Schwimmbahnen des heutigen Prozesses mit Rollen Kunde, Innendienst, KI und SAP">
+            </a>
+            <figcaption>Prozess heute und mit KI – als Schwimmbahnen je Rolle.</figcaption>
+          </figure>
+          <figure data-focus="sap">
+            <a href="assets/screens/sap-uebergabe.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/sap-uebergabe.webp" width="1600" height="1075" loading="lazy" decoding="async"
+                   alt="Feld-Mapping von der App auf die Felder des SAP-Kundenauftrags">
+            </a>
+            <figcaption>Übergabe an SAP S/4HANA: Feld-Mapping auf den Kundenauftrag.</figcaption>
+          </figure>
+          <figure data-focus="daten sap">
+            <a href="assets/screens/business-case.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/business-case.webp" width="1600" height="1075" loading="lazy" decoding="async"
+                   alt="Business Case mit eingesparten Stunden, Kosten und Fehlern sowie Kostenvergleich vorher und nachher">
+            </a>
+            <figcaption>Business Case: Auftragszahlen aus den Daten, Annahmen als Regler.</figcaption>
+          </figure>
+          <figure data-focus="daten">
+            <a href="assets/screens/dashboard.webp" target="_blank" rel="noopener">
+              <img src="assets/screens/dashboard.webp" width="1600" height="1075" loading="lazy" decoding="async"
+                   alt="Vertriebs-Dashboard mit Filtern und fünf Kennzahlen samt Verlaufslinien">
+            </a>
+            <figcaption>Vertriebs-Dashboard: Kennzahlen mit Vorjahresvergleich.</figcaption>
+          </figure>
+        </div>
+
+        <!-- TODO Demo-Video: sobald aufgenommen, hier einbinden (z. B. <video controls src="assets/demo.mp4">) -->
+        <div class="video-placeholder" role="note">
+          <div><strong>Demo-Video folgt</strong>90 Sekunden: eine Dialekt-Nachricht wird zum geprüften Auftrag.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Arbeitsweise mit KI -->
+    <section class="section" id="arbeitsweise" aria-labelledby="ai-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Arbeitsweise</p>
+          <h2 id="ai-title">Wie ich mit KI arbeite</h2>
+          <p class="lead">Den Code der Arbeitsprobe hat Claude Code geschrieben, ein KI-Werkzeug von Anthropic. Meine Aufgabe
+            war, das Richtige bauen zu lassen und sicherzustellen, dass es stimmt.</p>
+        </div>
+        <ol class="principles">
+          <li class="card principle">
+            <span class="number">01</span>
+            <h3>Steuern</h3>
+            <p>Ich lege Szenario, Anforderungen und Geschäftsregeln fest und arbeite in kleinen Schritten – ein Commit pro
+              Schritt, jede Entscheidung mit Begründung dokumentiert.</p>
+            <p class="example"><em>Beispiel:</em> Den Demo-Modus habe ich von Anfang an zur Pflicht gemacht, damit jeder die
+              App ohne Schlüssel und ohne Kosten testen kann.</p>
+          </li>
+          <li class="card principle">
+            <span class="number">02</span>
+            <h3>Prüfen</h3>
+            <p>Jede Phase nehme ich im Browser ab – hell und dunkel, am Desktop und auf dem Handy. Dazu kommen automatische
+              Tests und Code-Reviews mit Gegenprüfung.</p>
+            <p class="example"><em>Beispiel:</em> Beim Schreiben der Making-of-Seite fiel auf, dass der Bestellschluss um
+              14 Uhr, den ich als Regel nennen wollte, noch gar nicht umgesetzt war. Erst eingebaut, dann beschrieben.</p>
+          </li>
+          <li class="card principle">
+            <span class="number">03</span>
+            <h3>Messen statt glauben</h3>
+            <p>Ob die KI gut arbeitet, entscheidet eine Messung, nicht ein Eindruck – und ein Modellwechsel nur mit einer
+              Regel, die vorher feststeht.</p>
+            <p class="example"><em>Beispiel:</em> Der erste Lauf ergab 4 von 7. Die Fehler lagen im Kundenabgleich und in der
+              Datumsrechnung – nach zwei gezielten Änderungen: 7 von 7.</p>
+          </li>
+        </ol>
+        <p class="closing">Was ich daraus mitnehme: KI macht mich schnell, aber die Verantwortung für Anforderungen, Qualität
+          und Ergebnis bleibt beim Menschen – genau wie in der App selbst.</p>
+      </div>
+    </section>
+
+    <!-- 5. Über mich -->
+    <section class="section" id="ueber-mich" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about-text">
+          <p class="eyebrow">Über mich</p>
+          <h2 id="about-title">Zwischen Prozess, System und Daten</h2>
+          <p>Ich habe Wirtschaftsinformatik an der Universität Passau studiert. Mich reizt die Stelle, an der aus einer
+            fachlichen Anforderung ein funktionierender Ablauf im System wird – und an der Daten zeigen, ob er wirkt.</p>
+          <dl class="facts">
+            <div><dt>Studium</dt><dd>Wirtschaftsinformatik (B.Sc.), Universität Passau</dd></div>
+            <div><dt>Praxismodul</dt><dd>SAP Fiori und RAP (ABAP RESTful Application Programming Model) mit der msg systems ag – Note 1,3</dd></div>
+            <div><dt>Daten</dt><dd>Python-Datenanalyse – Note 1,3</dd></div>
+            <div><dt>Sprachen</dt><dd>Deutsch, Englisch, Polnisch</dd></div>
+            <div><dt>Außerdem</dt><dd>Beachvolleyball-Trainer im Hochschulsport</dd></div>
+          </dl>
+        </div>
+        <figure>
+          <img src="assets/abschluss.jpg" width="1200" height="900" loading="lazy" decoding="async"
+               alt="Daniel Grzegorzek bei seinem Abschluss vor der Universität Passau">
+          <figcaption>Abschluss an der Universität Passau</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 6. Kontakt -->
+    <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Lassen Sie uns sprechen</h2>
+        <p class="lead">Ich freue mich über Ihre Nachricht – am liebsten per E-Mail oder über LinkedIn.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:danigrzegorzek@gmail.com">danigrzegorzek@gmail.com</a>
+          <!-- TODO LinkedIn: eigene Profil-URL eintragen -->
+          <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Daniel Grzegorzek · Ohne Cookies, ohne Tracking.</p>
+      <nav aria-label="Rechtliches">
+        <a href="datenschutz.html">Datenschutz</a>
+        <!-- <a href="impressum.html">Impressum</a>  ← einkommentieren, sobald die Anschrift eingetragen ist -->
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

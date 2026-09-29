@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    rect { fill: #1f6f5c; } text { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) { rect { fill: #6fc9ad; } text { fill: #0d1a15; } }
+  </style>
+  <rect width="64" height="64" rx="16"/>
+  <text x="32" y="42" text-anchor="middle" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">DG</text>
+</svg>
