@@ -6,8 +6,8 @@
   <title>Daniel Grzegorzek – Wirtschaftsinformatiker</title>
   <meta name="description" content="Wirtschaftsinformatiker (B.Sc., Universität Passau). Ich verbinde Geschäftsprozesse, IT-Systeme und Daten und setze KI dort ein, wo sie Arbeit wirklich erleichtert.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#111413" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://danielgrzegorzek.github.io/">
   <meta property="og:title" content="Daniel Grzegorzek – Wirtschaftsinformatiker">
@@ -15,8 +15,11 @@
   <meta property="og:image" content="https://danielgrzegorzek.github.io/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Beide Schriften sofort laden: Der Kopfbereich steht damit gleich in der richtigen Schrift -->
+  <link rel="preload" href="assets/fonts/newsreader-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/demo-video.js" defer></script>
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -36,51 +39,56 @@
   </header>
 
   <main id="inhalt">
-    <!-- 1. Kopf -->
+    <!-- Kopf: Name groß, ein Satz, Porträt im Raster -->
     <section class="hero" id="top">
-      <div class="container">
-        <img class="portrait" src="assets/portrait.jpg" width="800" height="800" alt="Porträt von Daniel Grzegorzek">
-        <div>
-          <p class="eyebrow">Wirtschaftsinformatiker (B.Sc.)</p>
-          <h1>Daniel Grzegorzek</h1>
-          <p class="lead">Ich verbinde Geschäftsprozesse, IT-Systeme und Daten und setze KI dort ein, wo sie Arbeit
-            wirklich erleichtert.</p>
-          <div class="actions">
-            <a class="button primary" href="assets/lebenslauf.pdf" target="_blank" rel="noopener">Lebenslauf (PDF)</a>
-            <a class="button" href="mailto:danigrzegorzek@gmail.com">E-Mail</a>
-            <a class="button" href="https://www.linkedin.com/in/danielgrzegorzek/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
+      <div class="container grid hero-grid">
+        <p class="eyebrow">Wirtschaftsinformatiker (B.Sc.)</p>
+        <h1 class="hero-name">Daniel <span>Grzegorzek</span></h1>
+        <figure class="portrait passer">
+          <img src="assets/portrait.jpg" width="800" height="800" alt="Porträt von Daniel Grzegorzek" fetchpriority="high">
+        </figure>
+        <p class="lead">Ich verbinde Geschäftsprozesse, IT-Systeme und Daten und setze KI dort ein, wo sie Arbeit
+          wirklich erleichtert.</p>
+        <div class="actions">
+          <a class="button" href="assets/lebenslauf.pdf" target="_blank" rel="noopener">Lebenslauf (PDF)</a>
+          <a class="link" href="mailto:danigrzegorzek@gmail.com">E-Mail</a>
+          <a class="link" href="https://www.linkedin.com/in/danielgrzegorzek/" target="_blank" rel="noopener">
+            LinkedIn
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- 2. Skills -->
+    <!-- 01 Skills: Verzeichnis mit Haarlinien – Bereich links, Werkzeuge rechts -->
     <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Skills</p>
+      <div class="container grid">
+        <header class="section-head">
+          <p class="section-label">Skills</p>
           <h2 id="skills-title">Was ich mitbringe</h2>
+        </header>
+        <div class="section-body">
+          <ul class="skills">
+            <li class="skill"><h3>Prozesse &amp; ERP</h3><p>SAP Fiori · ABAP RAP · OData · Prozessmodellierung</p></li>
+            <li class="skill"><h3>Daten</h3><p>Python (Pandas, Plotly) · SQL · Dashboards</p></li>
+            <li class="skill"><h3>KI</h3><p>LLM-Integration (Claude-API) · Prompting · KI-gestützte Entwicklung</p></li>
+            <li class="skill"><h3>UX &amp; Kommunikation</h3><p>Figma-Prototyping · Präsentation · Teamkoordination</p></li>
+          </ul>
+          <p class="languages"><strong>Sprachen:</strong> Deutsch, Englisch, Polnisch (fließend)</p>
         </div>
-        <ul class="skills">
-          <li class="card skill"><h3>Prozesse &amp; ERP</h3><p>SAP Fiori · ABAP RAP · OData · Prozessmodellierung</p></li>
-          <li class="card skill"><h3>Daten</h3><p>Python (Pandas, Plotly) · SQL · Dashboards</p></li>
-          <li class="card skill"><h3>KI</h3><p>LLM-Integration (Claude-API) · Prompting · KI-gestützte Entwicklung</p></li>
-          <li class="card skill"><h3>UX &amp; Kommunikation</h3><p>Figma-Prototyping · Präsentation · Teamkoordination</p></li>
-        </ul>
-        <p class="languages"><strong>Sprachen:</strong> Deutsch, Englisch, Polnisch (fließend)</p>
       </div>
     </section>
 
-    <!-- 3. Projekte -->
+    <!-- 02 Projekte: Bräu am Stein als Titelgeschichte mit Video, darunter drei ruhige Karten -->
     <section class="section" id="projekte" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Projekte</p>
+      <div class="container grid">
+        <header class="section-head">
+          <p class="section-label">Projekte</p>
           <h2 id="projects-title">Woran ich gearbeitet habe</h2>
-        </div>
+        </header>
 
-        <article class="card project featured">
-          <div class="project-text">
+        <article class="featured">
+          <div class="featured-text">
             <h3>Bräu am Stein</h3>
             <p class="project-meta">Eigenes Portfolio-Projekt · seit 09/2026</p>
             <p>KI-gestützte Auftragserfassung für eine fiktive Brauerei, von der Bestellung im Dialekt bis zum
@@ -88,47 +96,49 @@
               Regeln ab, und ein Mensch bestätigt.</p>
             <ul class="tags"><li>Python</li><li>Streamlit</li><li>Claude-API</li><li>SQLite</li><li>SAP OData</li></ul>
             <div class="actions">
-              <a class="button primary" href="https://braeu-am-stein-ki.streamlit.app" target="_blank" rel="noopener">
+              <a class="button" href="https://braeu-am-stein-ki.streamlit.app" target="_blank" rel="noopener">
                 Live-App
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
               </a>
-              <a class="button" href="https://braeu-am-stein-ki.streamlit.app/making_of" target="_blank" rel="noopener">Making-of</a>
-              <a class="button" href="https://github.com/danielgrzegorzek/brauerei-ki-auftragserfassung" target="_blank" rel="noopener">GitHub</a>
+              <a class="link" href="https://braeu-am-stein-ki.streamlit.app/making_of" target="_blank" rel="noopener">Making-of</a>
+              <a class="link" href="https://github.com/danielgrzegorzek/brauerei-ki-auftragserfassung" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
-          <figure class="project-video">
-            <!-- Startet erst, wenn es sichtbar ist (assets/demo-video.js) – vorher lädt nur das Vorschaubild -->
-            <video data-autoplay muted loop playsinline controls preload="none" width="1920" height="1080"
-                   poster="assets/demo-poster.jpg"
-                   aria-label="Demo-Video, 45 Sekunden, ohne Ton: Eine Bestellung im Dialekt wird zum geprüften Auftrag und als Kundenauftrag an SAP übergeben, danach Business Case und Making-of">
-              <source src="assets/demo.mp4" type="video/mp4">
-              <a href="assets/demo.mp4">Demo-Video herunterladen (MP4)</a>
-            </video>
+          <figure class="featured-video">
+            <!-- Startet erst, wenn es sichtbar ist (assets/site.js) – vorher lädt nur das Vorschaubild -->
+            <div class="passer">
+              <video data-autoplay muted loop playsinline controls preload="none" width="1920" height="1080"
+                     poster="assets/demo-poster.jpg"
+                     aria-label="Demo-Video, 45 Sekunden, ohne Ton: Eine Bestellung im Dialekt wird zum geprüften Auftrag und als Kundenauftrag an SAP übergeben, danach Business Case und Making-of">
+                <source src="assets/demo.mp4" type="video/mp4">
+                <a href="assets/demo.mp4">Demo-Video herunterladen (MP4)</a>
+              </video>
+            </div>
             <figcaption>Demo-Video · 45 Sekunden, ohne Ton</figcaption>
           </figure>
         </article>
 
         <ul class="projects">
-          <li class="card project">
+          <li class="project">
             <h3>SAP Fiori &amp; RAP</h3>
             <p class="project-meta">Praxismodul mit der msg systems ag · Note 1,3</p>
             <p>Eine Fiori-App mit ABAP RAP auf Basis des SAP-Reise-Szenarios. Dazu gehörten ABAP-Grundlagen, ABAP
               Dictionary, objektorientiertes ABAP und OData-Services.</p>
             <ul class="tags"><li>SAP Fiori</li><li>ABAP RAP</li><li>OData</li></ul>
           </li>
-          <li class="card project">
+          <li class="project">
             <h3>Health-Habit-App</h3>
             <p class="project-meta">Modul Foundations of Human-Computer Interaction</p>
             <p>Ein App-Konzept, das beim Aufbau gesunder Gewohnheiten unterstützt. Die Prototypen entstanden in Figma,
               präsentiert wurde das Ergebnis als Video.</p>
             <ul class="tags"><li>UX</li><li>Figma</li><li>Prototyping</li></ul>
           </li>
-          <li class="card project">
+          <li class="project">
             <h3>Serious Game</h3>
             <p class="project-meta">Modul Change Management</p>
             <p>Ein spielerischer Prototyp, bei dem LLMs gezielt in Konzeption und Umsetzung zum Einsatz kamen. Prompting
               und Qualitätssicherung sind dokumentiert.</p>
-            <a class="project-link" href="https://www.youtube.com/watch?v=YpYlYQtunyc" target="_blank" rel="noopener">
+            <a class="link" href="https://www.youtube.com/watch?v=YpYlYQtunyc" target="_blank" rel="noopener">
               Video ansehen
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
@@ -138,62 +148,73 @@
       </div>
     </section>
 
-    <!-- 4. Arbeitsweise -->
+    <!-- 03 Arbeitsweise: drei Grundsätze mit großen Ziffern, darunter der Hinweis zu Claude Code -->
     <section class="section" id="arbeitsweise" aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Arbeitsweise</p>
+      <div class="container grid">
+        <header class="section-head">
+          <p class="section-label">Arbeitsweise</p>
           <h2 id="work-title">Wie ich arbeite</h2>
+        </header>
+        <div class="section-body">
+          <ol class="principles">
+            <li class="principle">
+              <span class="number">01</span>
+              <h3>Steuern</h3>
+              <p>Ich lege Anforderungen und Regeln fest und arbeite in kleinen, nachvollziehbaren Schritten.</p>
+            </li>
+            <li class="principle">
+              <span class="number">02</span>
+              <h3>Prüfen</h3>
+              <p>Jedes Ergebnis nehme ich selbst ab, am Desktop, auf dem Handy und mit automatischen Tests.</p>
+            </li>
+            <li class="principle">
+              <span class="number">03</span>
+              <h3>Messen statt glauben</h3>
+              <p>Ob eine Lösung funktioniert, entscheidet eine Messung, nicht ein Eindruck.</p>
+            </li>
+          </ol>
+          <p class="closing">Den Code von „Bräu am Stein“ hat Claude Code geschrieben, ein KI-Werkzeug von Anthropic.
+            Anforderungen, Prüfung und Entscheidungen habe ich verantwortet.</p>
         </div>
-        <ol class="principles">
-          <li class="card principle">
-            <span class="number">01</span>
-            <h3>Steuern</h3>
-            <p>Ich lege Anforderungen und Regeln fest und arbeite in kleinen, nachvollziehbaren Schritten.</p>
-          </li>
-          <li class="card principle">
-            <span class="number">02</span>
-            <h3>Prüfen</h3>
-            <p>Jedes Ergebnis nehme ich selbst ab, am Desktop, auf dem Handy und mit automatischen Tests.</p>
-          </li>
-          <li class="card principle">
-            <span class="number">03</span>
-            <h3>Messen statt glauben</h3>
-            <p>Ob eine Lösung funktioniert, entscheidet eine Messung, nicht ein Eindruck.</p>
-          </li>
-        </ol>
-        <p class="closing">Den Code von „Bräu am Stein“ hat Claude Code geschrieben, ein KI-Werkzeug von Anthropic.
-          Anforderungen, Prüfung und Entscheidungen habe ich verantwortet.</p>
       </div>
     </section>
 
-    <!-- 5. Über mich -->
+    <!-- 04 Über mich: Text und Foto vom Abschluss -->
     <section class="section" id="ueber-mich" aria-labelledby="about-title">
-      <div class="container about">
-        <div class="about-text">
-          <p class="eyebrow">Über mich</p>
+      <div class="container grid">
+        <header class="section-head">
+          <p class="section-label">Über mich</p>
           <h2 id="about-title">Zwischen Prozess, System und Daten</h2>
+        </header>
+        <div class="section-body about">
           <p>Ich habe Wirtschaftsinformatik an der Universität Passau studiert. Mich reizt die Stelle, an der aus einer
             fachlichen Anforderung ein funktionierender Ablauf im System wird und an der Daten zeigen, ob er wirkt. Im
             Hochschulsport war ich Co-Trainer für Beachvolleyball und habe Turniere organisiert.</p>
+          <figure>
+            <img src="assets/abschluss.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Daniel Grzegorzek bei seinem Abschluss vor der Universität Passau">
+            <figcaption>Abschluss an der Universität Passau</figcaption>
+          </figure>
         </div>
-        <figure>
-          <img src="assets/abschluss.jpg" width="1200" height="900" loading="lazy" decoding="async"
-               alt="Daniel Grzegorzek bei seinem Abschluss vor der Universität Passau">
-          <figcaption>Abschluss an der Universität Passau</figcaption>
-        </figure>
       </div>
     </section>
 
-    <!-- 6. Kontakt -->
+    <!-- 05 Kontakt: große Überschrift, E-Mail-Adresse als großer Link -->
     <section class="section contact" id="kontakt" aria-labelledby="contact-title">
-      <div class="container">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="contact-title">Lassen Sie uns sprechen</h2>
-        <p class="lead">Ich freue mich über Ihre Nachricht.</p>
-        <div class="actions">
-          <a class="button primary" href="mailto:danigrzegorzek@gmail.com">danigrzegorzek@gmail.com</a>
-          <a class="button" href="https://www.linkedin.com/in/danielgrzegorzek/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="container grid">
+        <header class="section-head">
+          <p class="section-label">Kontakt</p>
+          <h2 id="contact-title">Lassen Sie uns sprechen</h2>
+        </header>
+        <div class="section-body">
+          <p class="lead">Ich freue mich über Ihre Nachricht.</p>
+          <div class="actions">
+            <a class="link mail" href="mailto:danigrzegorzek@gmail.com">danigrzegorzek@gmail.com</a>
+            <a class="link" href="https://www.linkedin.com/in/danielgrzegorzek/" target="_blank" rel="noopener">
+              LinkedIn
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
